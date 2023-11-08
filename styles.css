@@ -1,0 +1,19 @@
+:root{
+    --body: #0a0e10;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--body);
+}
+
+.container{
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
