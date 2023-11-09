@@ -1,5 +1,5 @@
 :root{
-    --body: #0a0e10;
+    --body: #0f191f;
     --white: #FFFF;
 }
 
@@ -19,4 +19,6 @@ body{
     height: 350px;
     max-height: 600px;
     margin: 25vh auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px lightgray;   
 }
