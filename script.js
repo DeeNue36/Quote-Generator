@@ -20,5 +20,5 @@ getQuote(apiURL);
 
 //function to post the quote on twitter
 function tweetQuote(){
-    window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + "-- By" + author.innerHTML, "Tweet Window", "width=600, height=300");
+    window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + " -- By " + author.innerHTML, "Tweet Window", "width=600, height=300");
 }

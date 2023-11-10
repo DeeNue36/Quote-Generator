@@ -2,7 +2,7 @@
 
 :root{
     /* --body: #291d84; */
-    --body: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12) no-repeat fixed;
+    --body: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     --white: #FFFF;
     --underline: rgb(23, 124, 229);
     --btnOutline: #177ce5;
@@ -16,9 +16,9 @@
 
 body{
     background-image: var(--body);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family:'Playfair Display', serif;
-    width: 100vw;
-    height: 100vh;
 }
 
 .quote-container{
@@ -30,7 +30,7 @@ body{
     transform: translate(-50%, -50%);
     padding: 40px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);   
 }
 
@@ -56,6 +56,7 @@ body{
     font-family: 'Agbalumo';
     font-size: 32px;
     min-height: 110px;
+    word-wrap: wrap;
 }
 
 .quote-container blockquote::before, .quote-container blockquote::after {
@@ -111,4 +112,56 @@ body{
 .buttons button:nth-child(2){
     background: transparent;
     color: var(--btnOutline);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1025px) {
+    .quote-container{
+        width: 70%;
+        padding: 20px;
+        max-height: 90%;
+    }
+    .quote-container h2{
+        font-size: 28px
+    }
+    .quote-container blockquote{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .quote-container{
+        width: 80%;
+        padding: 20px;
+        max-height: 90%;
+    }
+    .quote-container h2{
+        font-size: 28px
+    }
+    .quote-container blockquote{
+        font-size: 20px;
+    }
+    .quote-container span{
+        font-size: 20px;
+    }
+    .buttons button{
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .quote-container{
+        width: 85%;
+        padding: 15px;
+    }
+    .quote-container h2{
+        font-size: 26px
+    }
+    .quote-container blockquote{
+        font-size: 16.2px;
+    }
+    .quote-container span{
+        font-size: 14px;
+    }    
 }
