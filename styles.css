@@ -2,7 +2,7 @@
 
 :root{
     /* --body: #291d84; */
-    --body: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    --body: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12) no-repeat fixed;
     --white: #FFFF;
     --underline: rgb(23, 124, 229);
     --btnOutline: #177ce5;
