@@ -3,6 +3,7 @@
 :root{
     --body: #591b67;
     --white: #FFFF;
+    --underline: rgb(23, 124, 229);
 }
 
 *{
@@ -28,4 +29,49 @@ body{
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);   
+}
+
+.quote-container h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-container h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--underline);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-container blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-container blockquote::before, .quote-container blockquote::after {
+    content: '"';
+
+}
+
+.quote-container span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-container span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: var(--underline);
+    position: absolute;
+    top: 50%;
+    left: -30px;
 }
