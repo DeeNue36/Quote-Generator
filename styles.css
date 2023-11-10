@@ -4,6 +4,7 @@
     --body: #591b67;
     --white: #FFFF;
     --underline: rgb(23, 124, 229);
+    --btnOutline: #177ce5;
 }
 
 *{
@@ -74,4 +75,34 @@ body{
     position: absolute;
     top: 50%;
     left: -30px;
+}
+
+.buttons{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    background: var(--underline);
+    color: var(--white);
+    border-radius: 25px;
+    border: 1px solid var(--underline);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttons i{
+    margin-right: 10px;
+}
+
+.buttons button:nth-child(2){
+    background: transparent;
+    color: var(--btnOutline);
 }
