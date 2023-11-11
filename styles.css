@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 :root{
-    /* --body: #291d84; */
     --body: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     --white: #FFFF;
     --underline: rgb(23, 124, 229);
