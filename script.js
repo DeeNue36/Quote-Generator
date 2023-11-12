@@ -4,7 +4,8 @@ const author = document.getElementById("author");
 //js constant variables specifying the API URL
 const apiURL = "https://api.quotable.io/random"
 
-//function calling and getting all the data from the api url
+
+//function calling and getting all the data from the api and passing it into url
 async function getQuote(url){
     //fetching the data from the url
     const response = await fetch(url);
